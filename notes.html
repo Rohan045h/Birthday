@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +11,93 @@
 </head>
 </head>
 <body>
-    <h2>Dil  ki Baatien</h2>
+   
+    <h2>💖My cuetest and best Sister💖</h2>
     <div >
         <div class="notes" id="1">
             <img src="./assets/WhatsApp Image 2025-09-18 at 16.04.45_3de1dbc1.jpg">
             <p class="Notes">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur nesciunt obcaecati provident veritatis mollitia dolorem accusamus cupiditate illum suscipit minus omnis optio natus, nulla magni ab! Repellendus ducimus officia est, nemo voluptatum provident eum quibusdam dignissimos quia libero corrupti eius quae accusantium facere! Suscipit ipsam obcaecati molestiae delectus non.
+                🌸 Happy Birthday my October cutieee ❤️💖 <br>
+                🌸 Happy Birthday my Sweetest Sister ❤️💖<br>
+                🌸 You are my sweetest ghewar 🫂🫂<br>
+                you are the most precious person 😍😍 i have found after my family and you are only one who  listens to me without judging and witout any condition🙌✨,so you are the best person in my life. I am truly lucky and blessed to have you in my life 💖😍. 
             </p>
         </div>
+        <div class="notes" id="2">
+            <img class="img2" src="./assets/WhatsApp Image 2025-09-18 at 16.04.45_e3f9b396.jpg">
+            <p class="Notes">
+                My dear Sister 💕💕 and October cutieee 💖💖🫂!!!!! <br>
+                whenever i see your notification  on my screen i always get a smile on my face 😀😀😍 since last 2 months you have became a very precious part of my life🥹🥹🥹🥹. Thanks for being my safe space and a person who makes life feel a little less heavy🙌🥰.
+            </p>
+        </div>
+         <div class="notes" id="3">
+            <img class="img3" src="./assets/WhatsApp Image 2025-09-27 at 19.48.59_b0d8f3db.jpg">
+            <p class="Notes">
+                Tere liye kuch lines💖🥹🥹<br>
+                <br>
+                Har mushkil aasaan lagti hai 💕💕,<br>
+                Har raah gulzar lagti hai 🌸✨;<br>
+                mann aur bhi kush rahne laga hai,<br>
+                Mujhe behn banke jabse tu mili hai 🫂💕
+                <br><br>
+                Always keep smiling 😀😀becuase you looks very cute while smiling 🥰😍
+                </p>
+        </div>
+            <h2 id = 'behna'> Ekk hazaroon mein...... <br>
+            meri behna hai.... <br>
+            saari Umaar..... <br>
+            mujhe sang rehnaa hai....... </h2>
+            <h2>Happy Birthday My Ghewar💕🥹🥹,
+            
+            
+            </h2>
+        
+        
     </div>
+    <canvas id="burst-canvas"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+<script>
+    var myCanvas = document.getElementById('burst-canvas');
+    
+
+    myCanvas.style.position = 'fixed';
+    myCanvas.style.top = '0';
+    myCanvas.style.left = '0';
+    myCanvas.style.width = '100vw';
+    myCanvas.style.height = '100vh';
+    myCanvas.style.zIndex = '-1'; 
+
+    var myConfetti = confetti.create(myCanvas, {
+      resize: true,
+      useWorker: true
+    });
+
+   
+    function fireBurst() {
+      myConfetti({
+        particleCount: 150, 
+        spread: 80,         
+        origin: { y: 0.6 }, 
+        colors: ['#8E44AD', '#3498DB', '#E74C3C', '#F1C40F', '#2ECC71'] 
+      });
+    }
+
+   
+    fireBurst();
+
+    
+    document.addEventListener('click', function (event) {
+        myConfetti({
+            particleCount: 100,
+            spread: 70,
+            origin: {
+                x: event.clientX / window.innerWidth, 
+                y: event.clientY / window.innerHeight 
+            },
+            colors: ['#8E44AD', '#3498DB', '#E74C3C', '#F1C40F', '#2ECC71']
+        });
+    });
+</script>
 </body>
 </html>

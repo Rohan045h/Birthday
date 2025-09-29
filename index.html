@@ -10,14 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
+     <canvas id="confetti-canvas"></canvas>
     <div class="O">
-        <h1>OCTOBER CUETIEE!</h1>
+        <h1>💖💖OCTOBER CUETIEE!🥰🥰</h1>
         <h2>Happy Birthday Bhumika</h2>
-        <div class="image-container"><img src="./assets/WhatsApp Image 2025-09-03 at 15.23.26_272172c2.jpg">
-            <div class="Button"><a href="notes.html" class="celebrate-button"><button>Celebrate</button></a>
+        <div class="image-container"><img src="./assets/WhatsApp Image 2025-09-27 at 20.15.26_5349071d.jpg">
+            <div class="Button"><a href="notes.html" class="celebrate-button"><button>💖💖💖</button></a>
             </div>
         </div>
     </div>
-    
+     <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const confettiSettings = {
+                target: 'confetti-canvas',
+                max: '150',
+                size: '1.2',
+                animate: true,
+                props: ['circle', 'square', 'triangle', 'line'],
+                colors: [[165,104,246],[230,61,135],[0,199,228],[253,214,126]],
+                clock: '25',
+                rotate: true,
+                width: window.innerWidth,
+                height: window.innerHeight,
+            };
+            const confetti = new ConfettiGenerator(confettiSettings);
+            confetti.render();
+        });
+    </script>
 </body>
 </html>
