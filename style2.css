@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #FFEDFA;
+    
+}
+h2{
+    text-align: center;
+    font-family: libre Baskerville;
+    font-size:50px;
+    color: #D4AF37;
+}
+.notes{
+    background-color: #FDFDAA;
+    width:80%;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    float: left;
+}
+img{
+    margin-right:0 auto;
+    height: 200px;
+    float: left;
+    border:3px solid #d4af37;
+    margin: 10px;  
+}
+.Notes{
+    color: #4B4B4B;
+    font-family: 'Dancing Script';
+}
